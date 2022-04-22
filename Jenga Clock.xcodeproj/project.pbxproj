@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B5F7333281347C700259D07 /* Chess_ClockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5F7332281347C700259D07 /* Chess_ClockApp.swift */; };
+		3B5F7333281347C700259D07 /* JengaClockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5F7332281347C700259D07 /* JengaClockApp.swift */; };
 		3B5F7335281347C700259D07 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5F7334281347C700259D07 /* ContentView.swift */; };
 		3B5F7337281347CE00259D07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B5F7336281347CE00259D07 /* Assets.xcassets */; };
 		3B5F733A281347CE00259D07 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B5F7339281347CE00259D07 /* Preview Assets.xcassets */; };
-		3B5F7344281347CF00259D07 /* Chess_ClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5F7343281347CF00259D07 /* Chess_ClockTests.swift */; };
-		3B5F734E281347CF00259D07 /* Chess_ClockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5F734D281347CF00259D07 /* Chess_ClockUITests.swift */; };
-		3B5F7350281347CF00259D07 /* Chess_ClockUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5F734F281347CF00259D07 /* Chess_ClockUITestsLaunchTests.swift */; };
+		3B5F7344281347CF00259D07 /* JengaClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5F7343281347CF00259D07 /* JengaClockTests.swift */; };
+		3B5F734E281347CF00259D07 /* JengaClockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5F734D281347CF00259D07 /* JengaClockUITests.swift */; };
+		3B5F7350281347CF00259D07 /* JengaClockUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5F734F281347CF00259D07 /* JengaClockUITestsLaunchTests.swift */; };
+		3B5F735D28134C3100259D07 /* MultiPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5F735C28134C3100259D07 /* MultiPickerView.swift */; };
+		3B5F735F2813508C00259D07 /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5F735E2813508C00259D07 /* SetupView.swift */; };
+		3B5F7361281360D400259D07 /* RulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5F7360281360D400259D07 /* RulesView.swift */; };
+		3B5F73632813627C00259D07 /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5F73622813627C00259D07 /* CloseButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,16 +38,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3B5F732F281347C700259D07 /* Chess Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chess Clock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B5F7332281347C700259D07 /* Chess_ClockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chess_ClockApp.swift; sourceTree = "<group>"; };
+		3B5F732F281347C700259D07 /* Jenga Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jenga Clock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B5F7332281347C700259D07 /* JengaClockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JengaClockApp.swift; sourceTree = "<group>"; };
 		3B5F7334281347C700259D07 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3B5F7336281347CE00259D07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B5F7339281347CE00259D07 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		3B5F733F281347CF00259D07 /* Chess ClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Chess ClockTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B5F7343281347CF00259D07 /* Chess_ClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chess_ClockTests.swift; sourceTree = "<group>"; };
-		3B5F7349281347CF00259D07 /* Chess ClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Chess ClockUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B5F734D281347CF00259D07 /* Chess_ClockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chess_ClockUITests.swift; sourceTree = "<group>"; };
-		3B5F734F281347CF00259D07 /* Chess_ClockUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chess_ClockUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3B5F733F281347CF00259D07 /* Jenga ClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jenga ClockTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B5F7343281347CF00259D07 /* JengaClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JengaClockTests.swift; sourceTree = "<group>"; };
+		3B5F7349281347CF00259D07 /* Jenga ClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jenga ClockUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B5F734D281347CF00259D07 /* JengaClockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JengaClockUITests.swift; sourceTree = "<group>"; };
+		3B5F734F281347CF00259D07 /* JengaClockUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JengaClockUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3B5F735C28134C3100259D07 /* MultiPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiPickerView.swift; sourceTree = "<group>"; };
+		3B5F735E2813508C00259D07 /* SetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
+		3B5F7360281360D400259D07 /* RulesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesView.swift; sourceTree = "<group>"; };
+		3B5F73622813627C00259D07 /* CloseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,9 +82,9 @@
 		3B5F7326281347C600259D07 = {
 			isa = PBXGroup;
 			children = (
-				3B5F7331281347C700259D07 /* Chess Clock */,
-				3B5F7342281347CF00259D07 /* Chess ClockTests */,
-				3B5F734C281347CF00259D07 /* Chess ClockUITests */,
+				3B5F7331281347C700259D07 /* Jenga Clock */,
+				3B5F7342281347CF00259D07 /* JengaClockTests */,
+				3B5F734C281347CF00259D07 /* JengaClockUITests */,
 				3B5F7330281347C700259D07 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,22 +92,26 @@
 		3B5F7330281347C700259D07 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3B5F732F281347C700259D07 /* Chess Clock.app */,
-				3B5F733F281347CF00259D07 /* Chess ClockTests.xctest */,
-				3B5F7349281347CF00259D07 /* Chess ClockUITests.xctest */,
+				3B5F732F281347C700259D07 /* Jenga Clock.app */,
+				3B5F733F281347CF00259D07 /* Jenga ClockTests.xctest */,
+				3B5F7349281347CF00259D07 /* Jenga ClockUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3B5F7331281347C700259D07 /* Chess Clock */ = {
+		3B5F7331281347C700259D07 /* Jenga Clock */ = {
 			isa = PBXGroup;
 			children = (
-				3B5F7332281347C700259D07 /* Chess_ClockApp.swift */,
+				3B5F7332281347C700259D07 /* JengaClockApp.swift */,
 				3B5F7334281347C700259D07 /* ContentView.swift */,
+				3B5F735E2813508C00259D07 /* SetupView.swift */,
+				3B5F7360281360D400259D07 /* RulesView.swift */,
+				3B5F735C28134C3100259D07 /* MultiPickerView.swift */,
+				3B5F73622813627C00259D07 /* CloseButton.swift */,
 				3B5F7336281347CE00259D07 /* Assets.xcassets */,
 				3B5F7338281347CE00259D07 /* Preview Content */,
 			);
-			path = "Chess Clock";
+			path = "Jenga Clock";
 			sourceTree = "<group>";
 		};
 		3B5F7338281347CE00259D07 /* Preview Content */ = {
@@ -110,29 +122,29 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		3B5F7342281347CF00259D07 /* Chess ClockTests */ = {
+		3B5F7342281347CF00259D07 /* JengaClockTests */ = {
 			isa = PBXGroup;
 			children = (
-				3B5F7343281347CF00259D07 /* Chess_ClockTests.swift */,
+				3B5F7343281347CF00259D07 /* JengaClockTests.swift */,
 			);
-			path = "Chess ClockTests";
+			path = JengaClockTests;
 			sourceTree = "<group>";
 		};
-		3B5F734C281347CF00259D07 /* Chess ClockUITests */ = {
+		3B5F734C281347CF00259D07 /* JengaClockUITests */ = {
 			isa = PBXGroup;
 			children = (
-				3B5F734D281347CF00259D07 /* Chess_ClockUITests.swift */,
-				3B5F734F281347CF00259D07 /* Chess_ClockUITestsLaunchTests.swift */,
+				3B5F734D281347CF00259D07 /* JengaClockUITests.swift */,
+				3B5F734F281347CF00259D07 /* JengaClockUITestsLaunchTests.swift */,
 			);
-			path = "Chess ClockUITests";
+			path = JengaClockUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3B5F732E281347C700259D07 /* Chess Clock */ = {
+		3B5F732E281347C700259D07 /* Jenga Clock */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3B5F7353281347CF00259D07 /* Build configuration list for PBXNativeTarget "Chess Clock" */;
+			buildConfigurationList = 3B5F7353281347CF00259D07 /* Build configuration list for PBXNativeTarget "Jenga Clock" */;
 			buildPhases = (
 				3B5F732B281347C700259D07 /* Sources */,
 				3B5F732C281347C700259D07 /* Frameworks */,
@@ -142,14 +154,14 @@
 			);
 			dependencies = (
 			);
-			name = "Chess Clock";
+			name = "Jenga Clock";
 			productName = "Chess Clock";
-			productReference = 3B5F732F281347C700259D07 /* Chess Clock.app */;
+			productReference = 3B5F732F281347C700259D07 /* Jenga Clock.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3B5F733E281347CF00259D07 /* Chess ClockTests */ = {
+		3B5F733E281347CF00259D07 /* Jenga ClockTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3B5F7356281347CF00259D07 /* Build configuration list for PBXNativeTarget "Chess ClockTests" */;
+			buildConfigurationList = 3B5F7356281347CF00259D07 /* Build configuration list for PBXNativeTarget "Jenga ClockTests" */;
 			buildPhases = (
 				3B5F733B281347CF00259D07 /* Sources */,
 				3B5F733C281347CF00259D07 /* Frameworks */,
@@ -160,14 +172,14 @@
 			dependencies = (
 				3B5F7341281347CF00259D07 /* PBXTargetDependency */,
 			);
-			name = "Chess ClockTests";
+			name = "Jenga ClockTests";
 			productName = "Chess ClockTests";
-			productReference = 3B5F733F281347CF00259D07 /* Chess ClockTests.xctest */;
+			productReference = 3B5F733F281347CF00259D07 /* Jenga ClockTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		3B5F7348281347CF00259D07 /* Chess ClockUITests */ = {
+		3B5F7348281347CF00259D07 /* Jenga ClockUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3B5F7359281347CF00259D07 /* Build configuration list for PBXNativeTarget "Chess ClockUITests" */;
+			buildConfigurationList = 3B5F7359281347CF00259D07 /* Build configuration list for PBXNativeTarget "Jenga ClockUITests" */;
 			buildPhases = (
 				3B5F7345281347CF00259D07 /* Sources */,
 				3B5F7346281347CF00259D07 /* Frameworks */,
@@ -178,9 +190,9 @@
 			dependencies = (
 				3B5F734B281347CF00259D07 /* PBXTargetDependency */,
 			);
-			name = "Chess ClockUITests";
+			name = "Jenga ClockUITests";
 			productName = "Chess ClockUITests";
-			productReference = 3B5F7349281347CF00259D07 /* Chess ClockUITests.xctest */;
+			productReference = 3B5F7349281347CF00259D07 /* Jenga ClockUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -206,7 +218,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3B5F732A281347C700259D07 /* Build configuration list for PBXProject "Chess Clock" */;
+			buildConfigurationList = 3B5F732A281347C700259D07 /* Build configuration list for PBXProject "Jenga Clock" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -219,9 +231,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3B5F732E281347C700259D07 /* Chess Clock */,
-				3B5F733E281347CF00259D07 /* Chess ClockTests */,
-				3B5F7348281347CF00259D07 /* Chess ClockUITests */,
+				3B5F732E281347C700259D07 /* Jenga Clock */,
+				3B5F733E281347CF00259D07 /* Jenga ClockTests */,
+				3B5F7348281347CF00259D07 /* Jenga ClockUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -257,8 +269,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B5F73632813627C00259D07 /* CloseButton.swift in Sources */,
 				3B5F7335281347C700259D07 /* ContentView.swift in Sources */,
-				3B5F7333281347C700259D07 /* Chess_ClockApp.swift in Sources */,
+				3B5F7361281360D400259D07 /* RulesView.swift in Sources */,
+				3B5F735D28134C3100259D07 /* MultiPickerView.swift in Sources */,
+				3B5F735F2813508C00259D07 /* SetupView.swift in Sources */,
+				3B5F7333281347C700259D07 /* JengaClockApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B5F7344281347CF00259D07 /* Chess_ClockTests.swift in Sources */,
+				3B5F7344281347CF00259D07 /* JengaClockTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +290,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B5F7350281347CF00259D07 /* Chess_ClockUITestsLaunchTests.swift in Sources */,
-				3B5F734E281347CF00259D07 /* Chess_ClockUITests.swift in Sources */,
+				3B5F7350281347CF00259D07 /* JengaClockUITestsLaunchTests.swift in Sources */,
+				3B5F734E281347CF00259D07 /* JengaClockUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,12 +300,12 @@
 /* Begin PBXTargetDependency section */
 		3B5F7341281347CF00259D07 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3B5F732E281347C700259D07 /* Chess Clock */;
+			target = 3B5F732E281347C700259D07 /* Jenga Clock */;
 			targetProxy = 3B5F7340281347CF00259D07 /* PBXContainerItemProxy */;
 		};
 		3B5F734B281347CF00259D07 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3B5F732E281347C700259D07 /* Chess Clock */;
+			target = 3B5F732E281347C700259D07 /* Jenga Clock */;
 			targetProxy = 3B5F734A281347CF00259D07 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -416,7 +432,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Chess Clock/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Jenga Clock/Preview Content\"";
 				DEVELOPMENT_TEAM = S73MBXSV7H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -425,16 +441,17 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.adamkopec.Chess-Clock";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adamkopec.Jenga-Clock";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -445,7 +462,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Chess Clock/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Jenga Clock/Preview Content\"";
 				DEVELOPMENT_TEAM = S73MBXSV7H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -454,16 +471,17 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.adamkopec.Chess-Clock";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adamkopec.Jenga-Clock";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -483,7 +501,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chess Clock.app/Chess Clock";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jenga Clock.app/Jenga Clock";
 			};
 			name = Debug;
 		};
@@ -503,7 +521,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chess Clock.app/Chess Clock";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jenga Clock.app/Jenga Clock";
 			};
 			name = Release;
 		};
@@ -546,7 +564,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3B5F732A281347C700259D07 /* Build configuration list for PBXProject "Chess Clock" */ = {
+		3B5F732A281347C700259D07 /* Build configuration list for PBXProject "Jenga Clock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3B5F7351281347CF00259D07 /* Debug */,
@@ -555,7 +573,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3B5F7353281347CF00259D07 /* Build configuration list for PBXNativeTarget "Chess Clock" */ = {
+		3B5F7353281347CF00259D07 /* Build configuration list for PBXNativeTarget "Jenga Clock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3B5F7354281347CF00259D07 /* Debug */,
@@ -564,7 +582,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3B5F7356281347CF00259D07 /* Build configuration list for PBXNativeTarget "Chess ClockTests" */ = {
+		3B5F7356281347CF00259D07 /* Build configuration list for PBXNativeTarget "Jenga ClockTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3B5F7357281347CF00259D07 /* Debug */,
@@ -573,7 +591,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3B5F7359281347CF00259D07 /* Build configuration list for PBXNativeTarget "Chess ClockUITests" */ = {
+		3B5F7359281347CF00259D07 /* Build configuration list for PBXNativeTarget "Jenga ClockUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3B5F735A281347CF00259D07 /* Debug */,

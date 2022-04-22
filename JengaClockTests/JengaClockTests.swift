@@ -1,6 +1,6 @@
 //
-//  Chess_ClockTests.swift
-//  Chess ClockTests
+//  JengaClockTests.swift
+//  Jenga ClockTests
 //
 //  Created by Adam Kopeć on 22/04/2022.
 //
