@@ -107,15 +107,25 @@ struct ContentView: View {
             }
         }
         .ignoresSafeArea()
+        .navigationBarTitle("", displayMode: .inline)
+        .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
         .alert("Do you want to end this game?", isPresented: $shouldShowCancel) {
             Button("End game", role: .destructive) { }
         }
     }
     
-    init(startingTime: Int) {
+    init(startingTime: Int, shouldAPlayerStart: Bool = false) {
         _playerA = State(initialValue: startingTime)
         _playerZ = State(initialValue: startingTime)
+        
+        if shouldAPlayerStart {
+            if Int.random(in: 0...1) == 0 {
+                _playerAsTurn = State(initialValue: true)
+            } else {
+                _playerZsTurn = State(initialValue: true)
+            }
+        }
     }
 }
 
