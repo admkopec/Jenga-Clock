@@ -29,7 +29,6 @@ struct RulesView: View {
                 .padding(.bottom)
                 ScrollView {
                     Text("The rules of *Chess Clock Jenga* 🧱 are pretty straightforward. The players try to play Jenga as fast as possible without topping it over. The player who tops over the Jenga or whose time runs out _looses_!\n\nThe players should remove and place blocks using just **one** hand. The same hand which placed the block should also be used to set the clock 😉 The blocks from **2 top most levels** shouldn't be removed. That's pretty much all.\n\n**Enjoy the play!**")
-
                 }
             }
             .padding(.horizontal)
@@ -40,6 +39,10 @@ struct RulesView: View {
 
 struct RulesView_Previews: PreviewProvider {
     static var previews: some View {
-        RulesView(showRules: .constant(true))
+        NavigationView {
+            
+        }.sheet(isPresented: .constant(true)) {
+            RulesView(showRules: .constant(true))
+        }
     }
 }

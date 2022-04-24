@@ -30,6 +30,7 @@
 		3B5F739A281422E900259D07 /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5F73622813627C00259D07 /* CloseButton.swift */; };
 		3B5F739C2814230500259D07 /* QuickSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5F739B2814230500259D07 /* QuickSetupView.swift */; };
 		3B5F739E2814233400259D07 /* QuickRulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5F739D2814233400259D07 /* QuickRulesView.swift */; };
+		3B5F73A028142CF000259D07 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5F739F28142CF000259D07 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +113,7 @@
 		3B5F73892814228000259D07 /* Jenga_Clock_AppClipUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jenga_Clock_AppClipUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3B5F739B2814230500259D07 /* QuickSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSetupView.swift; sourceTree = "<group>"; };
 		3B5F739D2814233400259D07 /* QuickRulesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickRulesView.swift; sourceTree = "<group>"; };
+		3B5F739F28142CF000259D07 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,8 +192,9 @@
 			isa = PBXGroup;
 			children = (
 				3B5F7332281347C700259D07 /* JengaClockApp.swift */,
-				3B5F7334281347C700259D07 /* ContentView.swift */,
 				3B5F735E2813508C00259D07 /* SetupView.swift */,
+				3B5F7334281347C700259D07 /* ContentView.swift */,
+				3B5F739F28142CF000259D07 /* SettingsView.swift */,
 				3B5F7360281360D400259D07 /* RulesView.swift */,
 				3B5F735C28134C3100259D07 /* MultiPickerView.swift */,
 				3B5F73622813627C00259D07 /* CloseButton.swift */,
@@ -487,6 +490,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B5F73A028142CF000259D07 /* SettingsView.swift in Sources */,
 				3B5F73632813627C00259D07 /* CloseButton.swift in Sources */,
 				3B5F7335281347C700259D07 /* ContentView.swift in Sources */,
 				3B5F7361281360D400259D07 /* RulesView.swift in Sources */,

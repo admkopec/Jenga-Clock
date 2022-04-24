@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AudioToolbox
 
 struct ContentView: View {
     @Environment(\.presentationMode) var presentationMode
@@ -18,8 +19,9 @@ struct ContentView: View {
     
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
-    @State var dragValue: DragGesture.Value?
-    @State var shouldShowCancel = false
+    @AppStorage("makeSounds") private var makeSounds = false
+    @AppStorage("vibrateOnTimesUp") private var allowHaptics = true
+    @AppStorage("invertTextOrientation") private var invertTextOrientation = true
     
     var body: some View {
         GeometryReader { geometry in
@@ -31,6 +33,7 @@ struct ContentView: View {
                             .font(.largeTitle)
                             .fontWeight(.bold)
                             .padding()
+                            .rotationEffect((invertTextOrientation ? .radians(.pi) : .radians(0)))
                             .foregroundColor(.white)
                             .frame(width: geometry.size.width)
                         Spacer()
@@ -44,6 +47,7 @@ struct ContentView: View {
                             .font(.title)
                             .fontWeight(.semibold)
                             .padding()
+                            .rotationEffect((invertTextOrientation ? .radians(.pi) : .radians(0)))
                             .frame(width: geometry.size.width)
                         Spacer()
                     }
@@ -91,9 +95,14 @@ struct ContentView: View {
                 if playerAsTurn == playerZsTurn { return }
                 if playerA == 0 || playerZ == 0 {
                     presentationMode.wrappedValue.dismiss()
+                } else {
+                    playerAsTurn.toggle()
+                    playerZsTurn.toggle()
+                    
+                    if allowHaptics {
+                        UIImpactFeedbackGenerator().impactOccurred()
+                    }
                 }
-                playerAsTurn.toggle()
-                playerZsTurn.toggle()
             }))
         }.onReceive(timer) { _ in
             if playerAsTurn, playerA > 0 {
@@ -102,17 +111,19 @@ struct ContentView: View {
             if playerZsTurn, playerZ > 0 {
                 playerZ -= 1
             }
-            if playerA == 0 || playerZ == 0 {
+            if playerA == 0 || playerZ == 0, allowHaptics {
                 UINotificationFeedbackGenerator().notificationOccurred(.warning)
+            } else if makeSounds {
+                AudioServicesPlaySystemSound(1104)
             }
+        }
+        .onDisappear {
+            timer.upstream.connect().cancel()
         }
         .ignoresSafeArea()
         .navigationBarTitle("", displayMode: .inline)
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
-        .alert("Do you want to end this game?", isPresented: $shouldShowCancel) {
-            Button("End game", role: .destructive) { }
-        }
     }
     
     init(startingTime: Int, shouldAPlayerStart: Bool = false) {
