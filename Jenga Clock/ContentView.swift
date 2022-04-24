@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CoreHaptics
 import AudioToolbox
 
 struct ContentView: View {
@@ -112,7 +113,11 @@ struct ContentView: View {
                 playerZ -= 1
             }
             if playerA == 0 || playerZ == 0, allowHaptics {
-                UINotificationFeedbackGenerator().notificationOccurred(.warning)
+                if CHHapticEngine.capabilitiesForHardware().supportsHaptics {
+                    UINotificationFeedbackGenerator().notificationOccurred(.warning)
+                } else {
+                    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
+                }
             } else if makeSounds {
                 AudioServicesPlaySystemSound(1104)
             }

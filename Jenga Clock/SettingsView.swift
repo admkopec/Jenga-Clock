@@ -18,30 +18,30 @@ struct SettingsView: View {
     var body: some View {
         NavigationView {
             VStack{
-            Form {
-                Section {
-                    Toggle(isOn: $chooseStartingPlayer) {
-                        Text("Choose starting Player")
+                Form {
+                    Section {
+                        Toggle(isOn: $chooseStartingPlayer) {
+                            Text("Choose starting Player")
+                        }
+                        Toggle(isOn: $invertTextOrientation) {
+                            Text("Timer faces the Player")
+                        }
                     }
-                    Toggle(isOn: $invertTextOrientation) {
-                        Text("Timer faces the Player")
+                    Section(header: Text("Sounds")) {
+                        Toggle(isOn: $makeSounds) {
+                            Text("Countdown sounds")
+                        }
+                        Toggle(isOn: $vibrateOnTimesUp) {
+                            Text("Haptic feedback")
+                        }
                     }
                 }
-                Section(header: Text("Sounds")) {
-                    Toggle(isOn: $makeSounds) {
-                        Text("Countdown sounds")
-                    }
-                    Toggle(isOn: $vibrateOnTimesUp) {
-                        Text("Haptic feedback")
-                    }
-                }
-            }
                 Text("Created with ❤️ by Adam Kopeć")
                     .foregroundColor(Color(UIColor.secondaryLabel))
                     .font(.caption)
-                    .padding()
+                    .padding(.bottom)
             }
-            .background(Color(UIColor.secondarySystemBackground))
+            .background(Color(UIColor.systemGroupedBackground))
             .navigationTitle("Settings")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
