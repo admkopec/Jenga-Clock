@@ -36,7 +36,7 @@ struct SettingsView: View {
                         }
                     }
                 }
-                Text("Created with ❤️ by Adam Kopeć")
+                Text("Created with ❤️ by **Adam Kopeć**")
                     .foregroundColor(Color(UIColor.secondaryLabel))
                     .font(.caption)
                     .padding(.bottom)

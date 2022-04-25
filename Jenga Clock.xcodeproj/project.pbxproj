@@ -31,6 +31,10 @@
 		3B5F739C2814230500259D07 /* QuickSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5F739B2814230500259D07 /* QuickSetupView.swift */; };
 		3B5F739E2814233400259D07 /* QuickRulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5F739D2814233400259D07 /* QuickRulesView.swift */; };
 		3B5F73A028142CF000259D07 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5F739F28142CF000259D07 /* SettingsView.swift */; };
+		3B9072AC28161C94006253A5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B9072AA28161C94006253A5 /* InfoPlist.strings */; };
+		3B9072AF28161C94006253A5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B9072AD28161C94006253A5 /* Localizable.strings */; };
+		3B9072B228161C94006253A5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B9072B028161C94006253A5 /* InfoPlist.strings */; };
+		3B9072B528161C94006253A5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B9072B328161C94006253A5 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +118,10 @@
 		3B5F739B2814230500259D07 /* QuickSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSetupView.swift; sourceTree = "<group>"; };
 		3B5F739D2814233400259D07 /* QuickRulesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickRulesView.swift; sourceTree = "<group>"; };
 		3B5F739F28142CF000259D07 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		3B9072AB28161C94006253A5 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3B9072AE28161C94006253A5 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3B9072B128161C94006253A5 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3B9072B428161C94006253A5 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +207,8 @@
 				3B5F735C28134C3100259D07 /* MultiPickerView.swift */,
 				3B5F73622813627C00259D07 /* CloseButton.swift */,
 				3B5F7336281347CE00259D07 /* Assets.xcassets */,
+				3B9072B328161C94006253A5 /* Localizable.strings */,
+				3B9072B028161C94006253A5 /* InfoPlist.strings */,
 				3B5F7338281347CE00259D07 /* Preview Content */,
 			);
 			path = "Jenga Clock";
@@ -237,6 +247,8 @@
 				3B5F739D2814233400259D07 /* QuickRulesView.swift */,
 				3B5F736E2814228000259D07 /* Assets.xcassets */,
 				3B5F73732814228000259D07 /* Info.plist */,
+				3B9072AD28161C94006253A5 /* Localizable.strings */,
+				3B9072AA28161C94006253A5 /* InfoPlist.strings */,
 				3B5F73742814228000259D07 /* Jenga_Clock_AppClip.entitlements */,
 				3B5F73702814228000259D07 /* Preview Content */,
 			);
@@ -420,6 +432,7 @@
 			knownRegions = (
 				en,
 				Base,
+				pl,
 			);
 			mainGroup = 3B5F7326281347C600259D07;
 			productRefGroup = 3B5F7330281347C700259D07 /* Products */;
@@ -441,6 +454,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B9072B228161C94006253A5 /* InfoPlist.strings in Resources */,
+				3B9072B528161C94006253A5 /* Localizable.strings in Resources */,
 				3B5F733A281347CE00259D07 /* Preview Assets.xcassets in Resources */,
 				3B5F7337281347CE00259D07 /* Assets.xcassets in Resources */,
 			);
@@ -465,6 +480,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B5F73722814228000259D07 /* Preview Assets.xcassets in Resources */,
+				3B9072AF28161C94006253A5 /* Localizable.strings in Resources */,
+				3B9072AC28161C94006253A5 /* InfoPlist.strings in Resources */,
 				3B5F736F2814228000259D07 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -576,6 +593,41 @@
 			targetProxy = 3B5F738B2814228100259D07 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3B9072AA28161C94006253A5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B9072AB28161C94006253A5 /* pl */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3B9072AD28161C94006253A5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B9072AE28161C94006253A5 /* pl */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		3B9072B028161C94006253A5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B9072B128161C94006253A5 /* pl */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3B9072B328161C94006253A5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B9072B428161C94006253A5 /* pl */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3B5F7351281347CF00259D07 /* Debug */ = {

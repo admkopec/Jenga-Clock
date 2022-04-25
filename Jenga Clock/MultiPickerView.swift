@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct MultiPickerView: UIViewRepresentable {
-    var data: [[String]]
-    @Binding var selections: [Int]
+    private var data = [[String]]()
+    private var selections = [Binding<Int>]()
     
     //makeCoordinator()
     func makeCoordinator() -> MultiPickerView.Coordinator {
@@ -28,9 +28,15 @@ struct MultiPickerView: UIViewRepresentable {
     
     //updateUIView(_:context:)
     func updateUIView(_ view: UIPickerView, context: UIViewRepresentableContext<MultiPickerView>) {
-        for i in 0...(self.selections.count - 1) {
-            view.selectRow(self.selections[i], inComponent: i, animated: false)
+        for i in 0..<self.selections.count {
+            view.selectRow(self.selections[i].wrappedValue, inComponent: i, animated: false)
         }
+    }
+    
+    init(data: [String]..., selection: Binding<Int>...) {
+        guard data.count == selection.count else { return }
+        self.data = data
+        self.selections = selection
     }
     
     class Coordinator: NSObject, UIPickerViewDataSource, UIPickerViewDelegate {
@@ -58,18 +64,18 @@ struct MultiPickerView: UIViewRepresentable {
         
         //pickerView(_:didSelectRow:inComponent:)
         func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-            self.parent.selections[component] = row
+            self.parent.selections[component].wrappedValue = row
         }
     }
 }
 
 struct MultiPickerView_Previews: PreviewProvider {
     static var previews: some View {
-        MultiPickerView(data: [
-            ["0 min", "1 min", "2 min",  "3 min",
-             "4 min", "5 min", "6 min",  "7 min",
-             "8 min", "9 min", "10 min", "11 min"],
-            ["0 sec", "1 sec", "2 sec",  "3 sec"]
-        ], selections: .constant([5, 0]))
+        MultiPickerView(data:
+                            ["0 min", "1 min", "2 min",  "3 min",
+                             "4 min", "5 min", "6 min",  "7 min",
+                             "8 min", "9 min", "10 min", "11 min"],
+                            ["0 sec", "1 sec", "2 sec",  "3 sec"],
+                        selection: .constant(5), .constant(0))
     }
 }

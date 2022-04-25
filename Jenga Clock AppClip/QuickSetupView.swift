@@ -8,19 +8,21 @@
 import SwiftUI
 
 struct QuickSetupView: View {
-    @State var selectedTime = [4, 0]
+    @State var selectedTimeMin = 2
+    @State var selectedTimeSec = 0
     
-    let minutesColumn: [String] = {
+    private static let minutesValues = [2, 4, 5, 6, 8, 10]
+    private let minutesColumn: [String] = {
         var res = [String]()
-        for i in 1...9 {
-            res.append("\(i) min")
+        for i in minutesValues {
+            res.append("\(i) \(NSLocalizedString("min", comment: ""))")
         }
         return res
     }()
-    let secondsColumn: [String] = {
+    private let secondsColumn: [String] = {
         var res = [String]()
         for i in [0, 15, 30, 45] {
-            res.append("\(i) sec")
+            res.append("\(i) \(NSLocalizedString("sec", comment: ""))")
         }
         return res
     }()
@@ -32,11 +34,11 @@ struct QuickSetupView: View {
                 .font(.title)
                 .fontWeight(.semibold)
                 .padding()
-            MultiPickerView(data: [minutesColumn, secondsColumn], selections: $selectedTime)
+            MultiPickerView(data: minutesColumn, secondsColumn, selection: $selectedTimeMin, $selectedTimeSec)
                 .padding()
             Spacer()
             NavigationLink {
-                ContentView(startingTime: (selectedTime[0]+1)*60 + selectedTime[1]*15, shouldAPlayerStart: true)
+                ContentView(startingTime: (QuickSetupView.minutesValues[selectedTimeMin])*60 + selectedTimeSec*15, shouldAPlayerStart: true)
             } label: {
                 Label("Start", systemImage: "play.fill")
                     .padding(.horizontal, 80)
