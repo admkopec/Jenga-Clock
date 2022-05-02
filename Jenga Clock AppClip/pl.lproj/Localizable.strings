@@ -16,3 +16,8 @@
 /* No comment provided by engineer. */
 "The rules of *Chess Clock Jenga* 🧱 are pretty straightforward. The players try to play Jenga as fast as possible without topping it over. The player who tops over the Jenga or whose time runs out _looses_!\n\nThe players should remove and place blocks using just **one** hand. The same hand which placed the block should also be used to set the clock 😉 The blocks from **2 top most levels** shouldn't be removed. That's pretty much all.\n\n**Enjoy the play!**" = "Zasady *Chess Clock Jengi* 🧱 są dość proste. Gracze starają się grać w Jengę najszybciej jak to możliwe bez przewrócenia jej. Gracz, który przewróci Jengę lub którego czas się skończy _przegrywa_!\n\nGracze powinni wyjmować i wkładać klocki używając tylko **jednej** ręki. Ta sama ręka, która włożyła klocek powinna być użyta do zatwierdzenia zegara 😉 Klocki z **2 górnych poziomów** nie powinny być wyjmowane. To w zasadzie wszystko.\n\n**Miłej rozgrywki!**";
 
+/* No comment provided by engineer. */
+"min" = "min";
+
+/* No comment provided by engineer. */
+"sec" = "sek";
