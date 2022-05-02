@@ -14,6 +14,7 @@ struct JengaClockApp: App {
             NavigationView {
                 SetupView()
             }
+            .navigationViewStyle(.stack)
         }
     }
 }

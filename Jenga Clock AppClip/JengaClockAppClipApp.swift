@@ -18,6 +18,7 @@ struct Jenga_Clock_AppClipApp: App {
                         QuickRulesView(showQuickRules: $showQuickRules)
                     }
             }
+            .navigationViewStyle(.stack)
         }
     }
 }
