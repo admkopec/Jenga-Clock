@@ -136,6 +136,7 @@ struct ContentView: View {
         _playerZ = State(initialValue: startingTime)
         
         if shouldAPlayerStart {
+            // TODO: Try to make it a little bit less random, so that it would change more often
             if Int.random(in: 0...1) == 0 {
                 _playerAsTurn = State(initialValue: true)
             } else {

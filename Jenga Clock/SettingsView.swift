@@ -45,9 +45,9 @@ struct SettingsView: View {
             .navigationTitle("Settings")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button("Close", action: {
+                    CloseButton {
                         shouldShowSelf = false
-                    })
+                    }
                 }
             }
         }

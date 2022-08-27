@@ -11,19 +11,16 @@ struct CloseButton: View {
     let action: () -> Void
     var body: some View {
         Button(action: action, label: {
-            ZStack {
-                Circle()
-                    .fill(.thinMaterial)
-                    .frame(width: 30, height: 30)
-                
-                Image(systemName: "xmark")
-                    .font(.system(size: 15, weight: .bold, design: .rounded))
-                    .foregroundColor(.secondary)
-            }
-            .padding(8)
-            .contentShape(Circle())
+            Circle()
+                .fill(Color(.systemFill))
+                .frame(width: 30, height: 30)
+                .overlay(
+                    Image(systemName: "xmark")
+                        .font(.system(size: 12, weight: .bold, design: .rounded))
+                        .foregroundColor(.secondary)
+                )
         })
-        .buttonStyle(PlainButtonStyle())
+        .padding(.top, 6)
         .accessibilityLabel(Text("Close"))
     }
 }
