@@ -17,36 +17,50 @@ struct SettingsView: View {
     
     var body: some View {
         NavigationView {
-            VStack{
-                Form {
-                    Section {
-                        Toggle(isOn: $chooseStartingPlayer) {
-                            Text("Choose starting Player")
+            GeometryReader { reader in
+                ZStack{
+                    Form {
+                        Section {
+                            Toggle(isOn: $chooseStartingPlayer) {
+                                Text("Choose starting Player")
+                            }
+                            Toggle(isOn: $invertTextOrientation) {
+                                Text("Timer faces the Player")
+                            }
                         }
-                        Toggle(isOn: $invertTextOrientation) {
-                            Text("Timer faces the Player")
+                        Section(header: Text("Sounds")) {
+                            Toggle(isOn: $makeSounds) {
+                                Text("Countdown sounds")
+                            }
+                            Toggle(isOn: $vibrateOnTimesUp) {
+                                Text("Haptic feedback")
+                            }
                         }
                     }
-                    Section(header: Text("Sounds")) {
-                        Toggle(isOn: $makeSounds) {
-                            Text("Countdown sounds")
-                        }
-                        Toggle(isOn: $vibrateOnTimesUp) {
-                            Text("Haptic feedback")
-                        }
+                    VStack {
+                        Spacer()
+                        Text("Created with ❤️ by **Adam Kopeć**")
+                            .foregroundColor(Color(UIColor.secondaryLabel))
+                            .font(.caption)
+                            .padding(.bottom)
                     }
                 }
-                Text("Created with ❤️ by **Adam Kopeć**")
-                    .foregroundColor(Color(UIColor.secondaryLabel))
-                    .font(.caption)
-                    .padding(.bottom)
-            }
-            .background(Color(UIColor.systemGroupedBackground))
-            .navigationTitle("Settings")
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    CloseButton {
-                        shouldShowSelf = false
+                .background(Color(UIColor.systemGroupedBackground))
+//                .navigationTitle("Settings")
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarLeading) {
+                        HStack {
+                            Spacer(minLength: (reader.size.width-8*12)/2)
+                            Text("Settings")
+                                .padding(.top, 8)
+                                .font(.headline)
+                        }
+                    }
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        CloseButton {
+                            shouldShowSelf = false
+                        }
                     }
                 }
             }
