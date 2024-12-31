@@ -1,0 +1,6 @@
+# Configuration file for https://skip.tools project
+build:
+  contents:
+    - block: 'dependencies'
+      contents:
+        - 'implementation("com.chargemap.compose:numberpicker:1.0.3")'

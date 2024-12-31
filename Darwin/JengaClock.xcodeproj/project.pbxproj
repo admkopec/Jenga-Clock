@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3BEE11762D1F8F150047DB27 /* JengaClockAppClip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 3BEE11672D1F8F130047DB27 /* JengaClockAppClip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3BEE11842D1F8F2F0047DB27 /* QuickSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE117F2D1F8F2F0047DB27 /* QuickSetupView.swift */; };
+		3BEE11852D1F8F2F0047DB27 /* JengaClockAppClipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE11822D1F8F2F0047DB27 /* JengaClockAppClipApp.swift */; };
+		3BEE11872D1F8F2F0047DB27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BEE117E2D1F8F2F0047DB27 /* Assets.xcassets */; };
+		3BEE118A2D1F92F90047DB27 /* QuickRulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE11892D1F92F40047DB27 /* QuickRulesView.swift */; };
+		3BEE118D2D1F94210047DB27 /* JengaClockApp in Frameworks */ = {isa = PBXBuildFile; productRef = 3BEE118C2D1F94210047DB27 /* JengaClockApp */; };
+		3BEE118E2D1F94210047DB27 /* JengaClockApp in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 3BEE118C2D1F94210047DB27 /* JengaClockApp */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		3BEE11912D1F96C70047DB27 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 3BEE11902D1F96C70047DB27 /* Localizable.xcstrings */; };
+		3BEE11922D1F9DB40047DB27 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F90C2B2A52156400F06D93 /* NavigationController.swift */; };
+		49231BAC2AC5BCEF00F98ADF /* JengaClockApp in Frameworks */ = {isa = PBXBuildFile; productRef = 49231BAB2AC5BCEF00F98ADF /* JengaClockApp */; };
+		49231BAD2AC5BCEF00F98ADF /* JengaClockApp in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 49231BAB2AC5BCEF00F98ADF /* JengaClockApp */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		496BDBEE2B8A7E9C00C09264 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 496BDBED2B8A7E9C00C09264 /* Localizable.xcstrings */; };
+		499CD43B2AC5B799001AE8D8 /* JengaClockAppMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F90C2B2A52156200F06D93 /* JengaClockAppMain.swift */; };
+		499CD4402AC5B799001AE8D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49F90C2F2A52156300F06D93 /* Assets.xcassets */; };
+		499CD4502AC5B799001AE8D8 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F90C2B2A52156400F06D93 /* NavigationController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3BEE11742D1F8F150047DB27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49F90C202A52156200F06D93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BEE11662D1F8F130047DB27;
+			remoteInfo = JengaClockAppClip;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3BEE117B2D1F8F150047DB27 /* Embed App Clips */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
+			dstSubfolderSpec = 16;
+			files = (
+				3BEE11762D1F8F150047DB27 /* JengaClockAppClip.app in Embed App Clips */,
+			);
+			name = "Embed App Clips";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BEE118F2D1F94210047DB27 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3BEE118E2D1F94210047DB27 /* JengaClockApp in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		499CD44A2AC5B9C6001AE8D8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				49231BAD2AC5BCEF00F98ADF /* JengaClockApp in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3BEE11672D1F8F130047DB27 /* JengaClockAppClip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JengaClockAppClip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BEE117E2D1F8F2F0047DB27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3BEE117F2D1F8F2F0047DB27 /* QuickSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSetupView.swift; sourceTree = "<group>"; };
+		3BEE11802D1F8F2F0047DB27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BEE11812D1F8F2F0047DB27 /* JengaClockAppClip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JengaClockAppClip.entitlements; sourceTree = "<group>"; };
+		3BEE11822D1F8F2F0047DB27 /* JengaClockAppClipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JengaClockAppClipApp.swift; sourceTree = "<group>"; };
+		3BEE11892D1F92F40047DB27 /* QuickRulesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickRulesView.swift; sourceTree = "<group>"; };
+		3BEE11902D1F96C70047DB27 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		4900101C2BACEA710000DE33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		493609562A6B7EAE00C401E2 /* JengaClock */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = JengaClock; path = ..; sourceTree = "<group>"; };
+		496BDBEB2B89A47800C09264 /* JengaClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JengaClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		496BDBED2B8A7E9C00C09264 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; name = Localizable.xcstrings; path = ../Sources/JengaClock/Resources/Localizable.xcstrings; sourceTree = "<group>"; };
+		496EB72F2A6AE4DE00C1253A /* Skip.env */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Skip.env; path = ../Skip.env; sourceTree = "<group>"; };
+		496EB72F2A6AE4DE00C1253B /* JengaClock.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = JengaClock.xcconfig; sourceTree = "<group>"; };
+		496EB72F2A6AE4DE00C1253C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		499AB9082B0581F4005E8330 /* plugins */ = {isa = PBXFileReference; lastKnownFileType = folder; name = plugins; path = ../../../SourcePackages/plugins; sourceTree = BUILT_PRODUCTS_DIR; };
+		49F90C2B2A52156200F06D93 /* JengaClockAppMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JengaClockAppMain.swift; path = Sources/JengaClockAppMain.swift; sourceTree = SOURCE_ROOT; };
+		49F90C2B2A52156400F06D93 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NavigationController.swift; path = Sources/NavigationController.swift; sourceTree = SOURCE_ROOT; };
+		49F90C2F2A52156300F06D93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		49F90C312A52156300F06D93 /* Entitlements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Entitlements.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3BEE11642D1F8F130047DB27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BEE118D2D1F94210047DB27 /* JengaClockApp in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		499CD43C2AC5B799001AE8D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49231BAC2AC5BCEF00F98ADF /* JengaClockApp in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3BEE11832D1F8F2F0047DB27 /* AppClip */ = {
+			isa = PBXGroup;
+			children = (
+				3BEE117E2D1F8F2F0047DB27 /* Assets.xcassets */,
+				3BEE11902D1F96C70047DB27 /* Localizable.xcstrings */,
+				3BEE117F2D1F8F2F0047DB27 /* QuickSetupView.swift */,
+				3BEE11892D1F92F40047DB27 /* QuickRulesView.swift */,
+				3BEE11802D1F8F2F0047DB27 /* Info.plist */,
+				3BEE11812D1F8F2F0047DB27 /* JengaClockAppClip.entitlements */,
+				3BEE11822D1F8F2F0047DB27 /* JengaClockAppClipApp.swift */,
+			);
+			path = AppClip;
+			sourceTree = "<group>";
+		};
+		3BEE118B2D1F94210047DB27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		496BDBEC2B89A47800C09264 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				496BDBEB2B89A47800C09264 /* JengaClock.app */,
+				3BEE11672D1F8F130047DB27 /* JengaClockAppClip.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49AB54462B066A7E007B79B2 /* SkipStone */ = {
+			isa = PBXGroup;
+			children = (
+				499AB9082B0581F4005E8330 /* plugins */,
+			);
+			name = SkipStone;
+			sourceTree = "<group>";
+		};
+		49F90C1F2A52156200F06D93 = {
+			isa = PBXGroup;
+			children = (
+				496EB72F2A6AE4DE00C1253C /* README.md */,
+				496EB72F2A6AE4DE00C1253A /* Skip.env */,
+				496EB72F2A6AE4DE00C1253B /* JengaClock.xcconfig */,
+				496BDBED2B8A7E9C00C09264 /* Localizable.xcstrings */,
+				493609562A6B7EAE00C401E2 /* JengaClock */,
+				49F90C2A2A52156200F06D93 /* App */,
+				3BEE11832D1F8F2F0047DB27 /* AppClip */,
+				49AB54462B066A7E007B79B2 /* SkipStone */,
+				3BEE118B2D1F94210047DB27 /* Frameworks */,
+				496BDBEC2B89A47800C09264 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		49F90C2A2A52156200F06D93 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				49F90C2B2A52156200F06D93 /* JengaClockAppMain.swift */,
+				49F90C2B2A52156400F06D93 /* NavigationController.swift */,
+				49F90C2F2A52156300F06D93 /* Assets.xcassets */,
+				49F90C312A52156300F06D93 /* Entitlements.plist */,
+				4900101C2BACEA710000DE33 /* Info.plist */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3BEE11662D1F8F130047DB27 /* JengaClockAppClip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BEE11782D1F8F150047DB27 /* Build configuration list for PBXNativeTarget "JengaClockAppClip" */;
+			buildPhases = (
+				3BEE11632D1F8F130047DB27 /* Sources */,
+				3BEE11642D1F8F130047DB27 /* Frameworks */,
+				3BEE11652D1F8F130047DB27 /* Resources */,
+				3BEE118F2D1F94210047DB27 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JengaClockAppClip;
+			packageProductDependencies = (
+				3BEE118C2D1F94210047DB27 /* JengaClockApp */,
+			);
+			productName = JengaClockAppClip;
+			productReference = 3BEE11672D1F8F130047DB27 /* JengaClockAppClip.app */;
+			productType = "com.apple.product-type.application.on-demand-install-capable";
+		};
+		499CD4382AC5B799001AE8D8 /* JengaClock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 499CD4412AC5B799001AE8D8 /* Build configuration list for PBXNativeTarget "JengaClock" */;
+			buildPhases = (
+				499CD43A2AC5B799001AE8D8 /* Sources */,
+				499CD43C2AC5B799001AE8D8 /* Frameworks */,
+				499CD43E2AC5B799001AE8D8 /* Resources */,
+				499CD4452AC5B869001AE8D8 /* Run skip gradle */,
+				499CD44A2AC5B9C6001AE8D8 /* Embed Frameworks */,
+				3BEE117B2D1F8F150047DB27 /* Embed App Clips */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3BEE11752D1F8F150047DB27 /* PBXTargetDependency */,
+			);
+			name = JengaClock;
+			packageProductDependencies = (
+				49231BAB2AC5BCEF00F98ADF /* JengaClockApp */,
+			);
+			productName = App;
+			productReference = 496BDBEB2B89A47800C09264 /* JengaClock.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49F90C202A52156200F06D93 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					3BEE11662D1F8F130047DB27 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = 49F90C232A52156200F06D93 /* Build configuration list for PBXProject "JengaClock" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				es,
+				ja,
+				pl,
+				de,
+			);
+			mainGroup = 49F90C1F2A52156200F06D93;
+			packageReferences = (
+			);
+			productRefGroup = 496BDBEC2B89A47800C09264 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				499CD4382AC5B799001AE8D8 /* JengaClock */,
+				3BEE11662D1F8F130047DB27 /* JengaClockAppClip */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3BEE11652D1F8F130047DB27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BEE11912D1F96C70047DB27 /* Localizable.xcstrings in Resources */,
+				3BEE11872D1F8F2F0047DB27 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		499CD43E2AC5B799001AE8D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				499CD4402AC5B799001AE8D8 /* Assets.xcassets in Resources */,
+				496BDBEE2B8A7E9C00C09264 /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		499CD4452AC5B869001AE8D8 /* Run skip gradle */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run skip gradle";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = "/bin/sh -e";
+			shellScript = "if [ \"${SKIP_ZERO}\" != \"\" ]; then\n\techo \"note: skipping skip due to SKIP_ZERO\"\n\texit 0\nelif [ \"${ENABLE_PREVIEWS}\" == \"YES\" ]; then\n\techo \"note: skipping skip due to ENABLE_PREVIEWS\"\n\texit 0\nelif [ \"${ACTION}\" == \"install\" ]; then\n\techo \"note: skipping skip due to archive install\"\n\texit 0\nelse\n\tSKIP_ACTION=\"${SKIP_ACTION:-launch}\"\nfi\nPATH=${BUILD_ROOT}/Debug:${BUILD_ROOT}/../../SourcePackages/artifacts/skip/skip/skip.artifactbundle/macos:${PATH}:${HOMEBREW_PREFIX:-/opt/homebrew}/bin\necho \"note: running gradle build with: $(which skip) gradle -p ${PWD}/../Android ${SKIP_ACTION:-launch}${CONFIGURATION:-Debug}\"\nskip gradle -p ../Android ${SKIP_ACTION:-launch}${CONFIGURATION:-Debug}\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3BEE11632D1F8F130047DB27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BEE118A2D1F92F90047DB27 /* QuickRulesView.swift in Sources */,
+				3BEE11922D1F9DB40047DB27 /* NavigationController.swift in Sources */,
+				3BEE11842D1F8F2F0047DB27 /* QuickSetupView.swift in Sources */,
+				3BEE11852D1F8F2F0047DB27 /* JengaClockAppClipApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		499CD43A2AC5B799001AE8D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				499CD43B2AC5B799001AE8D8 /* JengaClockAppMain.swift in Sources */,
+				499CD4502AC5B799001AE8D8 /* NavigationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3BEE11752D1F8F150047DB27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BEE11662D1F8F130047DB27 /* JengaClockAppClip */;
+			targetProxy = 3BEE11742D1F8F150047DB27 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3BEE11792D1F8F150047DB27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = AppClip/JengaClockAppClip.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AppClip/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Jenga Clock";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adamkopec.Jenga-Clock.Clip";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3BEE117A2D1F8F150047DB27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = AppClip/JengaClockAppClip.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AppClip/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Jenga Clock";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adamkopec.Jenga-Clock.Clip";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		499CD4422AC5B799001AE8D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_PREVIEWS = YES;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+			};
+			name = Debug;
+		};
+		499CD4432AC5B799001AE8D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_PREVIEWS = YES;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+			};
+			name = Release;
+		};
+		49F90C4B2A52156300F06D93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 496EB72F2A6AE4DE00C1253B /* JengaClock.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		49F90C4C2A52156300F06D93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 496EB72F2A6AE4DE00C1253B /* JengaClock.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3BEE11782D1F8F150047DB27 /* Build configuration list for PBXNativeTarget "JengaClockAppClip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BEE11792D1F8F150047DB27 /* Debug */,
+				3BEE117A2D1F8F150047DB27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		499CD4412AC5B799001AE8D8 /* Build configuration list for PBXNativeTarget "JengaClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				499CD4422AC5B799001AE8D8 /* Debug */,
+				499CD4432AC5B799001AE8D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49F90C232A52156200F06D93 /* Build configuration list for PBXProject "JengaClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49F90C4B2A52156300F06D93 /* Debug */,
+				49F90C4C2A52156300F06D93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3BEE118C2D1F94210047DB27 /* JengaClockApp */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = JengaClockApp;
+		};
+		49231BAB2AC5BCEF00F98ADF /* JengaClockApp */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = JengaClockApp;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 49F90C202A52156200F06D93 /* Project object */;
+}

@@ -1,0 +1,286 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Choose starting time" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anfangszeit wählen"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elija el tiempo de cuenta regresiva"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choisissez le temps de compte à rebours"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "開始時間を選択"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wybierz czas początkowy"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "选择倒计时时间"
+          }
+        }
+      }
+    },
+    "Let's play!" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lass uns spielen!"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¡Vamos a jugar!"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jouons!"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "遊ぼう！"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zaczynamy!"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "让我们玩！"
+          }
+        }
+      }
+    },
+    "min" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Min"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "min"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "min"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "分"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "min"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "分钟"
+          }
+        }
+      }
+    },
+    "Rules of Jenga" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Regeln von Jenga"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reglas de Jenga"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Règles du Jenga"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ジェンガのルール"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zasady Jengi"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "叠叠乐规则"
+          }
+        }
+      }
+    },
+    "sec" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sek"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "sec"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "sec"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "秒"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "sek"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "秒"
+          }
+        }
+      }
+    },
+    "Start" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anfangen"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comenzar"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Commencer"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "始める"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rozpocznij"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "开始"
+          }
+        }
+      }
+    },
+    "The rules of *Chess Clock Jenga* 🧱 are pretty straightforward. The players try to play Jenga as fast as possible without topping it over. The player who tops over the Jenga or whose time runs out _looses_!\n\nThe players should remove and place blocks using just **one** hand. The same hand which placed the block should also be used to set the clock 😉 The blocks from **2 top most levels** shouldn't be removed. That's pretty much all.\n\n**Enjoy the play!**" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Regeln von *Chess Clock Jenga* 🧱 sind ziemlich unkompliziert. Die Spieler versuchen, Jenga so schnell wie möglich zu spielen, ohne es umzuwerfen. Der Spieler, der das Jenga umwirft oder dessen Zeit abgelaufen ist, _verliert_!\n\nDie Spieler sollten Blöcke mit nur **einer** Hand entfernen und platzieren. Die gleiche Hand, die den Block platziert hat, sollte auch zum Einstellen der Uhr verwendet werden 😉 Die Blöcke von **den beiden obersten Ebenen** sollten nicht entfernt werden. Das ist so ziemlich alles.\n\n**Viel Spaß beim Spielen!**"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Las reglas de *Chess Clock Jenga* 🧱 son bastante sencillas. Los jugadores intentan jugar Jenga lo más rápido posible sin que se caiga. El jugador que caiga el Jenga o cuyo tiempo se acabe _pierde_.\n\nLos jugadores deben quitar y colocar bloques usando solo **una** mano. La misma mano con la que colocaron el bloque también debe usarse para poner en hora el reloj 😉 Los bloques de **los 2 niveles más altos** no deben quitarse. Eso es prácticamente todo.\n\n**¡Disfruta del juego!**"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les règles de *Chess Clock Jenga* 🧱 sont assez simples. Les joueurs essaient de jouer au Jenga le plus rapidement possible sans le renverser. Le joueur qui dépasse le Jenga ou dont le temps est écoulé _perd_ !\n\nLes joueurs doivent retirer et placer des blocs en utilisant seulement **une** main. La même main qui a placé le bloc doit également être utilisée pour régler l'horloge 😉 Les blocs des **2 niveaux les plus élevés** ne doivent pas être retirés. C'est à peu près tout.\n\n**Amusez-vous bien !**"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "*チェス クロック ジェンガ* 🧱 のルールは非常に簡単です。プレイヤーはジェンガを倒さずにできるだけ早くプレイしようとします。ジェンガを倒したり、時間切れになったプレイヤーは _負け_ になります!\n\nプレイヤーは **片手** だけでブロックを取り外したり配置したりする必要があります。ブロックを置いた同じ手でクロックを設定する必要があります 😉 **最上位 2 レベル** のブロックは取り外してはいけません。それだけです。\n\n**プレイをお楽しみください!**"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zasady *Chess Clock Jengi* 🧱 są dość proste. Gracze starają się grać w Jengę najszybciej jak to możliwe bez przewrócenia jej. Gracz, który przewróci Jengę lub którego czas się skończy _przegrywa_!\n\nGracze powinni wyjmować i wkładać klocki używając tylko **jednej** ręki. Ta sama ręka, która włożyła klocek powinna być użyta do zatwierdzenia zegara 😉 Klocki z **2 górnych poziomów** nie powinny być wyjmowane. To w zasadzie wszystko.\n\n**Miłej rozgrywki!**"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "*国际象棋时钟叠叠乐* 🧱 的规则非常简单。玩家尝试尽可能快地玩叠叠乐，但不要将其推翻。推翻叠叠乐或时间耗尽的玩家将_失败_！\n\n玩家应该只用**一只**手移除和放置积木。放置积木的同一只手也应该用于设置时钟😉 不应移除**2 个最顶层**的积木。差不多就这些。\n\n**享受游戏吧！**"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
