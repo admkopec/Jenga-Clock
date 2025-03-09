@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B4B77242D7D1F8E00710E1C /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 3B4B77232D7D1F8E00710E1C /* FirebaseAnalytics */; };
+		3B4B77262D7D1F8E00710E1C /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 3B4B77252D7D1F8E00710E1C /* FirebaseCrashlytics */; };
+		3B4B77282D7D1F9A00710E1C /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 3B4B77272D7D1F9A00710E1C /* FirebaseAnalytics */; };
+		3B4B772A2D7D1F9D00710E1C /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 3B4B77292D7D1F9D00710E1C /* FirebaseCrashlytics */; };
+		3B4B772C2D7D1FCD00710E1C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B772B2D7D1FCD00710E1C /* GoogleService-Info.plist */; };
+		3B4B772D2D7D1FCD00710E1C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B4B772B2D7D1FCD00710E1C /* GoogleService-Info.plist */; };
+		3B4B77322D7D287300710E1C /* FirebaseTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4B77312D7D287300710E1C /* FirebaseTracker.swift */; };
+		3B4B77332D7D287300710E1C /* FirebaseTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4B77312D7D287300710E1C /* FirebaseTracker.swift */; };
+		3B4B77352D7D323B00710E1C /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = 3B4B77342D7D323B00710E1C /* FirebasePerformance */; };
+		3B4B77372D7D324100710E1C /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = 3B4B77362D7D324100710E1C /* FirebasePerformance */; };
 		3BEE11762D1F8F150047DB27 /* JengaClockAppClip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 3BEE11672D1F8F130047DB27 /* JengaClockAppClip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3BEE11842D1F8F2F0047DB27 /* QuickSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE117F2D1F8F2F0047DB27 /* QuickSetupView.swift */; };
 		3BEE11852D1F8F2F0047DB27 /* JengaClockAppClipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEE11822D1F8F2F0047DB27 /* JengaClockAppClipApp.swift */; };
@@ -71,6 +81,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3B4B772B2D7D1FCD00710E1C /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3B4B77312D7D287300710E1C /* FirebaseTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirebaseTracker.swift; path = Sources/FirebaseTracker.swift; sourceTree = "<group>"; };
 		3BEE11672D1F8F130047DB27 /* JengaClockAppClip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JengaClockAppClip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BEE117E2D1F8F2F0047DB27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BEE117F2D1F8F2F0047DB27 /* QuickSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSetupView.swift; sourceTree = "<group>"; };
@@ -98,6 +110,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B4B772A2D7D1F9D00710E1C /* FirebaseCrashlytics in Frameworks */,
+				3B4B77282D7D1F9A00710E1C /* FirebaseAnalytics in Frameworks */,
+				3B4B77372D7D324100710E1C /* FirebasePerformance in Frameworks */,
 				3BEE118D2D1F94210047DB27 /* JengaClockApp in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,6 +121,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B4B77262D7D1F8E00710E1C /* FirebaseCrashlytics in Frameworks */,
+				3B4B77242D7D1F8E00710E1C /* FirebaseAnalytics in Frameworks */,
+				3B4B77352D7D323B00710E1C /* FirebasePerformance in Frameworks */,
 				49231BAC2AC5BCEF00F98ADF /* JengaClockApp in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -172,9 +190,11 @@
 			children = (
 				49F90C2B2A52156200F06D93 /* JengaClockAppMain.swift */,
 				49F90C2B2A52156400F06D93 /* NavigationController.swift */,
+				3B4B77312D7D287300710E1C /* FirebaseTracker.swift */,
 				49F90C2F2A52156300F06D93 /* Assets.xcassets */,
 				49F90C312A52156300F06D93 /* Entitlements.plist */,
 				4900101C2BACEA710000DE33 /* Info.plist */,
+				3B4B772B2D7D1FCD00710E1C /* GoogleService-Info.plist */,
 			);
 			name = App;
 			sourceTree = "<group>";
@@ -198,6 +218,9 @@
 			name = JengaClockAppClip;
 			packageProductDependencies = (
 				3BEE118C2D1F94210047DB27 /* JengaClockApp */,
+				3B4B77272D7D1F9A00710E1C /* FirebaseAnalytics */,
+				3B4B77292D7D1F9D00710E1C /* FirebaseCrashlytics */,
+				3B4B77362D7D324100710E1C /* FirebasePerformance */,
 			);
 			productName = JengaClockAppClip;
 			productReference = 3BEE11672D1F8F130047DB27 /* JengaClockAppClip.app */;
@@ -222,6 +245,9 @@
 			name = JengaClock;
 			packageProductDependencies = (
 				49231BAB2AC5BCEF00F98ADF /* JengaClockApp */,
+				3B4B77232D7D1F8E00710E1C /* FirebaseAnalytics */,
+				3B4B77252D7D1F8E00710E1C /* FirebaseCrashlytics */,
+				3B4B77342D7D323B00710E1C /* FirebasePerformance */,
 			);
 			productName = App;
 			productReference = 496BDBEB2B89A47800C09264 /* JengaClock.app */;
@@ -256,6 +282,7 @@
 			);
 			mainGroup = 49F90C1F2A52156200F06D93;
 			packageReferences = (
+				3B4B77222D7D1F8E00710E1C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 496BDBEC2B89A47800C09264 /* Products */;
 			projectDirPath = "";
@@ -274,6 +301,7 @@
 			files = (
 				3BEE11912D1F96C70047DB27 /* Localizable.xcstrings in Resources */,
 				3BEE11872D1F8F2F0047DB27 /* Assets.xcassets in Resources */,
+				3B4B772C2D7D1FCD00710E1C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +311,7 @@
 			files = (
 				499CD4402AC5B799001AE8D8 /* Assets.xcassets in Resources */,
 				496BDBEE2B8A7E9C00C09264 /* Localizable.xcstrings in Resources */,
+				3B4B772D2D7D1FCD00710E1C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +348,7 @@
 				3BEE11922D1F9DB40047DB27 /* NavigationController.swift in Sources */,
 				3BEE11842D1F8F2F0047DB27 /* QuickSetupView.swift in Sources */,
 				3BEE11852D1F8F2F0047DB27 /* JengaClockAppClipApp.swift in Sources */,
+				3B4B77332D7D287300710E1C /* FirebaseTracker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B4B77322D7D287300710E1C /* FirebaseTracker.swift in Sources */,
 				499CD43B2AC5B799001AE8D8 /* JengaClockAppMain.swift in Sources */,
 				499CD4502AC5B799001AE8D8 /* NavigationController.swift in Sources */,
 			);
@@ -377,7 +408,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_ENTITLEMENTS = AppClip/JengaClockAppClip.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 8;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
@@ -397,6 +428,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AppClip/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Jenga Clock";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.board-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -409,7 +441,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.adamkopec.Jenga-Clock.Clip";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -458,7 +490,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_ENTITLEMENTS = AppClip/JengaClockAppClip.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 8;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -473,6 +505,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AppClip/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Jenga Clock";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.board-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -485,7 +518,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.adamkopec.Jenga-Clock.Clip";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -504,8 +537,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_PREVIEWS = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.board-games";
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MARKETING_VERSION = 1.1;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -513,8 +553,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_PREVIEWS = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.board-games";
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MARKETING_VERSION = 1.1;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -588,7 +635,48 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		3B4B77222D7D1F8E00710E1C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
+		3B4B77232D7D1F8E00710E1C /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B4B77222D7D1F8E00710E1C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		3B4B77252D7D1F8E00710E1C /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B4B77222D7D1F8E00710E1C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		3B4B77272D7D1F9A00710E1C /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B4B77222D7D1F8E00710E1C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		3B4B77292D7D1F9D00710E1C /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B4B77222D7D1F8E00710E1C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		3B4B77342D7D323B00710E1C /* FirebasePerformance */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B4B77222D7D1F8E00710E1C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebasePerformance;
+		};
+		3B4B77362D7D324100710E1C /* FirebasePerformance */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B4B77222D7D1F8E00710E1C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebasePerformance;
+		};
 		3BEE118C2D1F94210047DB27 /* JengaClockApp */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = JengaClockApp;

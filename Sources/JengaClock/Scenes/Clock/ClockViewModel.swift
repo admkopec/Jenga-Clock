@@ -124,7 +124,12 @@ class ClockViewModel: ObservableObject {
 #else
         let duration = Duration.ofSeconds(time.toLong())
         let minutes = duration.toMinutes() % 60
-        let seconds = duration.toSeconds() % 60
+        var seconds: Long
+        do {
+            seconds = duration.toSeconds() % 60
+        } catch {
+            seconds = (duration.toMillis() / 1000) % 60
+        }
         return String.format("%02d:%02d", minutes, seconds)
 #endif
     }
@@ -136,6 +141,8 @@ class ClockViewModel: ObservableObject {
         playerZ = startingTime
         playerATimeLeft = formatTime(startingTime)
         playerZTimeLeft = formatTime(startingTime)
+        
+        Analytics.event("Initial Game Duration", parameters: ["seconds": "\(startingTime)"])
         
         if shouldPlayerStart {
             // TODO: Try to make it a little bit less random, so that it would change more often

@@ -77,6 +77,9 @@ struct SetupView: View {
                 .padding(.horizontal, 5)
             }
         }
+        .onAppear {
+            Analytics.showScreen("SetupView")
+        }
         .sheet(isPresented: $showRules) {
             RulesView(showRules: $showRules)
         }

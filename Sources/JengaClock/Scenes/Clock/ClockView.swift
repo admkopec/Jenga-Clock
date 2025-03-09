@@ -56,6 +56,7 @@ public struct ClockView: View {
         .animation(.default, value: viewModel.playerAsTurn)
         .animation(.default, value: viewModel.playerZsTurn)
         .onAppear {
+            Analytics.showScreen("ClockView")
             viewModel.onAppearActions()
         }
         .onDisappear {

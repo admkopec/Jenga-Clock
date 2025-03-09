@@ -5,6 +5,9 @@ plugins {
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.android.application)
     id("skip-build-plugin")
+    id("com.google.gms.google-services") version "4.4.2"
+    id("com.google.firebase.crashlytics") version "3.0.3"
+    id("com.google.firebase.firebase-perf") version "1.4.2"
 }
 
 skip {
@@ -67,5 +70,12 @@ android {
             isDebuggable = false // can be set to true for debugging release build, but needs to be false when uploading to store
             proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro")
         }
+    }
+
+    dependencies {
+        implementation(platform("com.google.firebase:firebase-bom:33.10.0"))
+        implementation("com.google.firebase:firebase-crashlytics")
+        implementation("com.google.firebase:firebase-analytics")
+        implementation("com.google.firebase:firebase-perf")
     }
 }

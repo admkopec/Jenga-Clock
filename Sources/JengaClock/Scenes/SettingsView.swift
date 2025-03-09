@@ -71,6 +71,9 @@ struct SettingsView: View {
                     }
                 }
         }
+        .onAppear {
+            Analytics.showScreen("SettingsView")
+        }
     }
 }
 

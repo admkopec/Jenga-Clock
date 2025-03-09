@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import JengaClock
+import FirebaseCore
 
 @main
 struct JengaClockAppClipApp: App {
@@ -19,5 +21,11 @@ struct JengaClockAppClipApp: App {
                     }
             }
         }
+    }
+    
+    init() {
+        FirebaseApp.configure()
+        let tracker = FirebaseTracker(isAppClip: true)
+        Analytics.register(tracker: tracker)
     }
 }

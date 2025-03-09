@@ -45,6 +45,9 @@ struct RulesView: View {
                     }
                 }
             }
+            .onAppear {
+                Analytics.showScreen("RulesView")
+            }
         }
     }
 }

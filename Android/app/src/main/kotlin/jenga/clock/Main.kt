@@ -30,6 +30,7 @@ open class AndroidAppMain: Application {
     override fun onCreate() {
         super.onCreate()
         logger.info("starting app")
+        Analytics.register(FirebaseTracker())
         ProcessInfo.launch(applicationContext)
     }
 
