@@ -15,23 +15,47 @@ struct CloseButton: View {
     let action: () -> Void
     var body: some View {
         Button(action: action, label: {
-            Circle()
-            #if !SKIP
-                .fill(Color(.systemFill))
+            #if SKIP
+            filledGrayX
             #else
-                .fill(Color.secondary.opacity(0.1))
+            if #available(iOS 26.0, *) {
+                Image(systemName: "xmark")
+                    .foregroundStyle(Color.primary)
+            } else {
+                filledGrayX
+            }
             #endif
-                .frame(width: 30, height: 30)
-                .overlay(content: { 
-                    Image(systemName: "xmark")
-                        .font(Font.system(size: 12, weight: .bold, design: .rounded))
-                        .foregroundColor(Color.secondary)
-
-                })
         })
-        .clipShape(Circle())
-        .padding(.top, 6)
+        .padding(.top, padding)
         .accessibilityLabel(Text("Close"))
+    }
+    
+    public init(action: @escaping () -> Void) {
+        self.action = action
+    }
+}
+
+extension CloseButton {
+    private var padding: CGFloat {
+        if #available(iOS 26.0, *) { 0 } else { 6 }
+    }
+}
+
+extension CloseButton {
+    private var filledGrayX: some View {
+        Circle()
+#if !SKIP
+            .fill(Color(.systemFill))
+#else
+            .fill(Color.secondary.opacity(0.1))
+#endif
+            .frame(width: 30, height: 30)
+            .overlay(content: {
+                Image(systemName: "xmark")
+                    .font(Font.system(size: 12, weight: .bold, design: .rounded))
+                    .foregroundColor(Color.secondary)
+                
+            })
     }
 }
 
